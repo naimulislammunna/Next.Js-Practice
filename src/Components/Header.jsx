@@ -32,6 +32,10 @@ const Header = () => {
             title: 'Post',
             path: '/all-post'
         },
+        {
+            title: 'meals',
+            path: '/meals'
+        },
     ]
     return (
         <nav className="bg-slate-500 py-5">
