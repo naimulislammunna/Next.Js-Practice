@@ -33,10 +33,10 @@ const Meals = () => {
             </div>
             <div className="grid grid-cols-3 gap-5">
                 {
-                    meals?.length > 0 && <> {meals?.map(({ idMeal, strMeal, strCategory }) => <div key={idMeal} className="p-5 border-2 rounded-lg space-y-2">
+                    meals?.length > 0 ? <> {meals?.map(({ idMeal, strMeal, strCategory }) => <div key={idMeal} className="p-5 border-2 rounded-lg space-y-2">
                         <h1>Title: {strMeal}</h1>
                         <h2>Category: {strCategory}</h2>
-                    </div>)}</>
+                    </div>)}</> : <><h1>No Data Found</h1></>
                 }
             </div>
         </div>
